@@ -1,0 +1,21 @@
+<h1>Estoque !</h1>
+
+<br>
+<table class="table table-striped table-condensed">
+	<thead>
+		<th style="min-width: 80px;">Codigo</th>
+		<th style="min-width: 80px;">Produto</th>
+		<th style="min-width: 30px;">Quantidade em Estoque</th>
+		<th style="min-width: 30px;">Quantidade Doador</th>
+		<th style="min-width: 30px;">Quantidade Tomador</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="alias in produto">
+			<td>{{alias.pro_nome}}</td>
+			<td>{{alias.est_qtd}}</td>
+			<td>{{alias.est_qtd_alu_doador}}</td>
+			<td>{{alias.est_qtd_alu_tomador}}</td>
+		</tr>
+	</tbody>
+</table>
+<a ng-href="#/" class="btn btn-info">Voltar</a>

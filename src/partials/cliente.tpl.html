@@ -1,0 +1,33 @@
+<h1>
+Cliente !
+</h1>
+<br>
+<a ng-href="#/cliente.criar" class="btn btn-info">Novo</a>
+<br>
+<table class="table table-striped table-condensed">
+	<thead>
+
+		<th style="min-width: 80px;">Codigo</th>
+		<th style="min-width: 80px;">Nome</th>
+		<th style="min-width: 80px;">Telefone</th>
+		<th style="min-width: 80px;">Email</th>
+		<th style="min-width: 80px;">CPF</th>
+		<th style="min-width: 20px;"></th>
+		<th style="min-width: 20px;"></th>
+
+	</thead>
+	<tbody>
+		<tr ng-repeat="alias in cliente">
+
+			<td>{{alias.pro_id}}</td>
+			<td>{{alias.pro_nome}}</td>
+			<td>{{alias.cli_tel}}</td>
+			<td>{{alias.cli_email}}</td>
+			<td>{{alias.cli_cpf}}</td>
+
+			<td><a ng-click="editCliente(cliente.id)" class="btn btn-small btn-primary">editar</a></td>
+			<td><a ng-click="deleteCliente(cliente.id)" class="btn btn-small btn-danger">remover</a></td>
+		</tr>
+	</tbody>
+</table>
+<a ng-href="#/" class="btn btn-info">Voltar</a>

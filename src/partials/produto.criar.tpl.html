@@ -1,0 +1,25 @@
+<div class="container">
+	<h1>Criar Produto</h1>
+	<form novalidate="novalidate" class=form-horizontal>
+		<div >
+			<label class="control-label" for="inputProduto">Produto: </label>
+				<input type="text" id="inputProduto" ng-model="produto.nome">
+		</div>
+		<br>
+		<div>
+			<label class="control-label" for="inputCategoria">Categoria: </label>
+				<select name="Tipo" id="inputCategoria" ng-model="produto.categoria">
+					<option value="Categoria 1">Categoria 1</option>
+					<option value="Categoria 2">Categoria 2</option>
+					<option value="Categoria 3">Categoria 3</option>
+					<option value="Categoria 4">Categoria 4</option>
+				</select>
+		</div>
+		<br>
+		<div >
+			<div class="controls">
+				<a ng-click="cancel()" class="btn btn-small btn-warning" ng-href="#/produto">Cancelar</a>
+				<a ng-click="createCategoria()" class="btn btn-small btn-success" ng-href="#/produto">Concluir</a>
+			</div>
+		</div>
+	</form>

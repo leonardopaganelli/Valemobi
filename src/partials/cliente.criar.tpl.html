@@ -1,0 +1,30 @@
+<div class="container">
+	<h1>Criar Cliente</h1>
+	<form novalidate="novalidate" class=form-horizontal>
+		<div >
+			<label class="control-label" for="inputNome">Nome: </label>
+			<input type="text" id="inputNome" ng-model="cliente.nome">
+		</div>
+		<br>
+		<div >
+			<label class="control-label" for="inputCPF">CPF: </label>
+				<input type="text" id="inputCPF" ng-model="cliente.cpf">
+		</div>
+		<br>
+		<div >
+			<label class="control-label" for="inputTelefone">Tefone: </label>
+				<input type="text" id="inputTelefone">
+		</div>
+		<br>
+		<div >
+			<label class="control-label" for="inputEmail">Email: </label>
+				<input type="text" id="inputEmail" ng-model="cliente.email">
+		</div>
+		<br>
+		<div >
+			<div class="controls">
+				<a ng-click="cancel()" class="btn btn-small btn-warning" ng-href="#/cliente">Cancelar</a>
+				<a ng-click="createCategoria()" class="btn btn-small btn-success" ng-href="#/cliente">Concluir</a>
+			</div>
+		</div>
+	</form>

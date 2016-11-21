@@ -1,0 +1,17 @@
+<h1>Categorias !</h1>
+<br>
+<a ng-href="#/categoria.criar" class="btn btn-info">Novo</a>
+<br>
+<table class="table table-striped table-condensed">
+	<thead>
+		<th style="min-width: 80px;">Codigo</th>
+		<th style="min-width: 80px;">Nome</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="alias in produto">
+			<td>{{alias.cat_id}}</td>
+			<td>{{alias.cat_nome}}</td>
+		</tr>
+	</tbody>
+</table>
+<a ng-href="#/" class="btn btn-info">Voltar</a>

@@ -1,0 +1,15 @@
+<div class="container">
+	<h1>Criar Categoria</h1>
+	<form novalidate="novalidate" class=form-horizontal>
+		<div >
+			<label class="control-label" for="inputCategoria">Categoria: </label>
+				<input type="text" id="inputCategoria" ng-model="categoria.nome">
+		</div>
+		<br>
+		<div >
+			<div class="controls">
+				<a ng-click="cancel()" class="btn btn-small btn-warning" ng-href="#/categoria">Cancelar</a>
+				<a ng-click="createCategoria()" class="btn btn-small btn-success" ng-href="#/categoria">Concluir</a>
+			</div>
+		</div>
+	</form>

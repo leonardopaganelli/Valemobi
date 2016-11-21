@@ -1,0 +1,47 @@
+<div class="container">
+	<h1>Criar Compra/Venda</h1>
+	<form novalidate="novalidate" class=form-horizontal>
+		<div >
+			<label class="control-label" for="inputProduto">Produto: </label>
+			<select name="Produto" id="inputProduto" ng-model="CEV.produto">
+				<option value="Produto 1">Produto 1</option>
+				<option value="Produto 2">Produto 2</option>
+			</select>
+			<br>
+		</div>
+		<br>
+		<div>
+			<label class="control-label" for="inputCliente">Cliente: </label>
+				<select name="Cliente" id="inputCliente" ng-model="CEV.cliente">
+					<option value="Cliente 1">Cliente 1</option>
+					<option value="Cliente 2">Cliente 2</option>
+				</select>
+		</div >
+		<br>
+		<div>
+			<label class="control-label" for="inputTipo">Tipo: </label>
+				<select name="Tipo" id="inputTipo" ng-model="CEV.tipo">
+					<option value="Compra">Compra</option>
+					<option value="Venda">Venda</option>
+					<option value="Tomador">Tomador</option>
+					<option value="Doacao">Doação</option>
+				</select>
+		</div>
+		<br>
+
+		<div class="controls">
+			<label class="control-label" for="inputQuantidade">Quantidade: </label>
+			<input type="text" id="inputQuantidade" ng-model="CEV.quantidade">
+		</div>
+		<br>
+		<div class="controls">
+			<label class="control-label" for="inputValor">Valor: </label>
+			<input type="text" id="inputValor" ng-model="CEV.valor" disabled>
+		</div>
+		<br>
+		<div class="controls">
+			<a ng-click="cancel()" class="btn btn-small btn-warning" ng-href="#/cev">Cancelar</a>
+			<a ng-click="createCategoria()" class="btn btn-small btn-success" ng-href="#/cev">Concluir</a>
+		</div>
+	
+	</form>

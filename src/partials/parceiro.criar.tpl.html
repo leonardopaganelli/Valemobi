@@ -1,0 +1,30 @@
+<div class="container">
+	<h1>Criar Parceiro</h1>
+	<form novalidate="novalidate" class=form-horizontal>
+		<div >
+			<label class="control-label" for="inputNome">Nome: </label>
+			<input type="text" id="inputNome" ng-model="parceiro.nome">
+		</div>
+		<br>
+		<div >
+			<label class="control-label" for="inputCNPJ">CNPJ: </label>
+				<input type="text" id="inputCNPJ" ng-model="parceiro.cnpj">
+		</div>
+		<br>
+		<div >
+			<label class="control-label" for="inputTelefone">Tefone: </label>
+				<input type="text" id="inputTelefone">
+		</div>
+		<br>
+		<div >
+			<label class="control-label" for="inputEmail">Email: </label>
+				<input type="text" id="inputEmail" ng-model="parceiro.email">
+		</div>
+		<br>
+		<div >
+			<div class="controls">
+				<a ng-click="cancel()" class="btn btn-small btn-warning" ng-href="#/parceiro">Cancelar</a>
+				<a ng-click="createCategoria()" class="btn btn-small btn-success" ng-href="#/parceiro">Concluir</a>
+			</div>
+		</div>
+	</form>

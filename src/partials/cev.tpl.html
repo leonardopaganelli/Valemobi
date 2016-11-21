@@ -1,0 +1,33 @@
+<h1>
+Compra e Venda !
+</h1>
+<br>
+<a ng-href="#/cev.criar" class="btn btn-info">Novo</a>
+<br>
+<table class="table table-striped table-condensed">
+	<thead>
+		<th style="min-width: 80px;">Cod Compra</th>
+		<th style="min-width: 80px;">Cliente</th>
+		<th style="min-width: 80px;">Produto</th>
+		<th style="min-width: 80px;">Tipo</th>
+		<th style="min-width: 80px;">Quantidade</th>
+		<th style="min-width: 80px;">Valor</th>
+		<th style="min-width: 40px;">Data</th>
+		<th style="min-width: 40px;">Hora</th>
+
+	</thead>
+	<tbody>
+		<tr ng-repeat="alias in cev">
+			<td>{{alias.cev_id}}</td>
+			<td>{{alias.pro_nome}}</td>
+			<td>{{alias.cli_nome}}</td>
+			<td>{{alias.cev_tipo}}</td>
+			<td>{{alias.cli_nome}}</td>
+			<td>{{alias.cev_valor}}</td>
+			<td>{{alias.cev_data}}</td>
+			<td>{{alias.cev_data}}</td>
+
+		</tr>
+	</tbody>
+</table>
+<a ng-href="#/" class="btn btn-info">Voltar</a>

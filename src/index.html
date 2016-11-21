@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt" ng-app="Projeto">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Bem Vindo</title>
+
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+<body >
+ 
+	<header>
+		<img src="img/logo.png">
+		<hr>
+	</header>
+	
+
+<div id="wrapper">
+
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+
+                <li class="sidebar-brand">
+                    <a href="#/">
+						Inicio
+                    </a>
+                </li>
+
+                <li>
+ 					<a ng-href="#/produto">Produtos </a>
+                </li>
+
+                <li>
+ 					<a ng-href="#/cev">Compra e Venda </a>
+                </li>
+                <li>
+ 					<a ng-href="#/cliente"> Clientes</a>
+                </li>
+                <li>
+ 					<a ng-href="#/parceiro"> Parceiros</a>
+                </li>
+                <li>
+ 					<a ng-href="#/estoque">Estoque</a>
+                </li>
+                <li>
+ 					<a ng-href="#/categoria">Categoria </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                       <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Esconder</a>
+                       <ng-view>
+						</ng-view>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+			<hr>
+			<p>Copyright 2016</p>
+		</footer>	
+    </div>
+
+
+
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-route.min.js"></script>
+    <script src="lib/angular-resource.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+	<script src="controller/produtoController.js"></script>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+	    $("#menu-toggle").click(function(e) {
+	        e.preventDefault();
+	        $("#wrapper").toggleClass("toggled");
+	    });
+    </script>
+
+</body>
+</html>

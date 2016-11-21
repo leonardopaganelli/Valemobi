@@ -1,0 +1,31 @@
+<h1>Parceiro !</h1>
+<br>
+<a ng-href="#/parceiro.criar" class="btn btn-info">Novo</a>
+<br>
+<table class="table table-striped table-condensed">
+	<thead>
+
+		<th style="min-width: 80px;">Codigo</th>
+		<th style="min-width: 80px;">Nome</th>
+		<th style="min-width: 80px;">Telefone</th>
+		<th style="min-width: 80px;">Email</th>
+		<th style="min-width: 80px;">CNPJ</th>
+		<th style="min-width: 20px;"></th>
+		<th style="min-width: 20px;"></th>
+
+	</thead>
+	<tbody>
+		<tr ng-repeat="alias in pareceiro">
+
+			<td>{{alias.par_id}}</td>
+			<td>{{alias.par_nome}}</td>
+			<td>{{alias.par_tel}}</td>
+			<td>{{alias.par_email}}</td>
+			<td>{{alias.par_cnpj}}</td>
+
+			<td><a ng-click="editParceiro(parceiro.id)" class="btn btn-small btn-primary">editar</a></td>
+			<td><a ng-click="deleteParceiro(parceiro.id)" class="btn btn-small btn-danger">remover</a></td>
+		</tr>
+	</tbody>
+</table>
+<a ng-href="#/" class="btn btn-info">Voltar</a>

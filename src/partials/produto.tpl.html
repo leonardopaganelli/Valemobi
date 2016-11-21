@@ -1,0 +1,26 @@
+<h1>
+Produtos !
+</h1>
+<br>
+<a ng-href="#/produto.criar" class="btn btn-info">Novo</a>
+<br>
+<table class="table table-striped table-condensed">
+	<thead>
+		<th style="min-width: 80px;">Codigo</th>
+		<th style="min-width: 80px;">Produto</th>
+		<th style="min-width: 80px;">Categoria</th>
+		<th style="min-width: 20px;"></th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="alias in produto">
+			<td>{{alias.pro_id}}</td>
+			<td>{{alias.pro_nome}}</td>
+			<td>{{alias.cat_nome}}</td>
+			<td><a ng-click="editProduto(produto.id)" class="btn btn-small btn-primary">editar</a></td>
+			<td><a ng-click="deleteProduto(produto.id)" class="btn btn-small btn-danger">remover</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<a ng-href="#/" class="btn btn-info">Voltar</a>
+<a ng-href="#/">Voltar</a>
